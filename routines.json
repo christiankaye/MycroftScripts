@@ -1,0 +1,56 @@
+{
+	"second morning": {
+		"tasks": [
+			"stop",
+			"set volume to 5",
+			"say the time is now",
+			"tell me the time",
+			"tell me the temperature",
+			"tell me the weather",
+			"play the news"
+		],
+		"schedule": "40 7 * * 0,1,2,3,4,5,6",
+		"enabled": true
+	},
+	"bedtime": {
+		"tasks": [
+			"stop",
+			"set volume to 5",
+			"say the time is now",
+			"tell me the time",
+			"tell me what is the forecast tomorrow",
+			"tell me  if I will need an umbrella tomorrow",
+			"update-config"
+		],
+		"schedule": "15 21 * * 0,1,2,3,4,5,6",
+		"enabled": true
+	},
+	"Sabbath": {
+		"tasks": [
+			"stop",
+			"set volume to 4",
+			"tell me the weather",
+			"stream 3ABN Radio Music Channel on tunein"
+		],
+		"schedule": "00 8 * * 5",
+		"enabled": false
+	},
+	"am": {
+		"tasks": [
+			"stop",
+			"set volume to 4",
+			"stream kcbi on tunein"
+		],
+		"schedule": "15 6 * * 0,1,2,3,4",
+		"enabled": true
+	},
+	"end am": {
+		"tasks": [
+			"stop",
+			"say the time is now",
+			"tell me the time"
+		],
+		"schedule": "0 09-21 * * 0-4",
+		"enabled": true
+	}
+}
