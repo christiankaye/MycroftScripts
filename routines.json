@@ -1,0 +1,52 @@
+{
+    "second morning": {
+        "tasks": [
+            "stop",
+            "set volume to 4",
+            "what time is it?",
+            "tell me the forecast today",
+            "play NPR news"
+        ],
+        "schedule": "45 7 * * 0,1,2,3,4,5,6",
+        "enabled": true
+    },
+    "bedtime": {
+        "tasks": [
+            "stop",
+            "set volume to 4",
+            "what time is it?",
+            "tell me the forecast tomorrow",
+            "play NPR news"
+        ],
+        "schedule": "15 21 * * 0,1,2,3,4,5,6",
+        "enabled": true
+    },
+    "Sabbath": {
+        "tasks": [
+            "stop",
+            "set volume to 4",
+            "tell me the weather",
+            "stream 3ABN Radio Music Channel on tunein"
+        ],
+        "schedule": "00 8 * * 5",
+        "enabled": true
+    },
+    "am": {
+        "tasks": [
+            "stop",
+            "set volume to 4"
+        ],
+        "schedule": "55 5 * * 0,1,2,3,4",
+        "enabled": false
+    },
+    "end am": {
+        "tasks": [
+            "stop",
+            "what time is it?",
+            "tell me the temperature"
+        ],
+        "schedule": "0 09-21 * * 0-4",
+        "enabled": true
+    }
+}
+
