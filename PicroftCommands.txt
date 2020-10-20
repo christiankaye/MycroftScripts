@@ -1,0 +1,32 @@
+There are several commands that are packaged into Picroft to help you with advanced functionality:
+
+mycroft-cli-client: This command will start the Mycroft CLI client if you are on the Linux command line
+mycroft-help: This command brings up help information
+mycroft-mic-test: This command re-runs the microphone test from the guided setup
+mycroft-msk: This command runs the Mycroft Skills Kit
+mycroft-msm: This command runs the Mycroft Skills Manager
+mycroft-pip: This command runs pip within the Mycroft Python virtual environment (venv). This is useful if you are installing dependencies for Skills.
+mycroft-say-to: This command sends a command to Picroft, just like you had 'spoken' a command. This is useful if your microphone is not working.
+mycroft-setup-wizard: This command re-runs the guided setup
+mycroft-skill-testrunner: This command runs the testrunner - used to run unit tests for a Skill. This is useful if you are doing Skills development with Mycroft
+mycroft-speak: This command gets Mycroft to 'speak' using Text to Speech.
+mycroft-venv-deactivate: This command deactivates the Mycroft Python virtual environment and is useful if you want to install other software on the Picroft device.
+mycroft-wipe: This command wipes Picroft back to factory default status. This will unpair the device and remove any configuration changes you have made.
+
+IMPORTANT:
+bash update.sh
+This script will update both mycroft-core and the Skills on your Picroft device. 
+Also writes over current .bashrc settings, but NOT the bash_aliases.
+Update .bashrc or add a bashrc alias.
+"touch .bash_aliases"
+"nano .bash_aliases"
+
+UPDATE RASPBERRY PI SOFTWARE / HARDWARE CONFIGURATION
+raspi-config
+
+INSTALL PYTHON PACKAGES WITH PIP
+/home/pi/mycroft-core/.venv/bin/python -m pip install --upgrade pip
+/home/pi/mycroft-core/.venv/bin/python -m pip install --upgrade (name of package)
+
+create a new test routine and then overwrite it.
+cp /home/pi/saved_files/routines.json /home/pi/.mycroft/skills/MycroftRoutineSkill/routines.json
