@@ -25,8 +25,3 @@ mycroft-msm install speedtest
 mycroft-msm install today-in-history
 mycroft-msm install Wiktionary
 mycroft-msm update
-
-## mycroft-python check and system reboot
-mycroft-pip check
-sleep 5
-sudo reboot
