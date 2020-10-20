@@ -1,32 +1,17 @@
-## mycroft-msm - update, install or uninstall skills
-
-## mycroft-pip - list, check, install, or uninstall dependencies
-
-#! /bin/bash
-
-######################################################################
-# Initialize Mycroft
-######################################################################
-source auto_run.sh
-
 ## start mycroft skills manager
 alias venv-activate='cd /home/pi/mycroft-core; source ./venv-activate.sh'
-
 ## stop mycroft skills manager
 alias venv-deactivate='mycroft-venv-deactivate' 
-
 ## go to the user settings folder
 alias mc-settings='cd /home/pi/.mycroft/'
-
 ## go to the skills folder
 alias mc-skills='cd /opt/mycroft/skills/'
-
 ## update mycroft skills manager
 alias mc-update='mycroft-msm update'
-
 ## go to the routines folder
 alias mc-routines='cd /home/pi/.mycroft/skills/MycroftRoutineSkill; nano routines.json'
-
 ## clean me script ##
 alias cleanme='cd /home/pi; sh cleanme.sh'
+## clear
+alias cls=clear
 
