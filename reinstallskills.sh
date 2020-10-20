@@ -25,3 +25,8 @@ mycroft-msm install speedtest
 mycroft-msm install today-in-history
 mycroft-msm install Wiktionary
 mycroft-msm update
+
+mycroft-pip check
+/home/pi/mycroft-core/.venv/bin/python -m pip install --upgrade pip
+sleep 3
+mycroft-start all restart
