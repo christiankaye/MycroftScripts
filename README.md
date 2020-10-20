@@ -1,2 +1,2 @@
 # MycroftScripts
-My Personal Collection of Working Mycroft Scripts and Seeings
+My Personal Collection of Working Mycroft Ai Scripts and Settings
